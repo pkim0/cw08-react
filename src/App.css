@@ -1,38 +1,225 @@
+body {
+  background-color: #1a1a1a;
+  color: #e1e1e1;
+  margin: 0;
+  min-height: 100vh;
+}
+
 .App {
   text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #60a5fa;
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.counter {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #2d2d2d;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.counter button {
+  background-color: #4f46e5;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.counter button:hover {
+  background-color: #6366f1;
+  transform: translateY(-1px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.filter-list {
+  padding: 20px;
+  background-color: #2d2d2d;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.filter-list input {
+  margin: 15px;
+  padding: 8px 15px;
+  border: 1px solid #404040;
+  border-radius: 4px;
+  width: 400px;
+  background-color: #1a1a1a;
+  color: #e1e1e1;
+}
+
+.filter-list input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.25);
+}
+
+.filter-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.filter-list li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #363636;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  color: #e1e1e1;
+}
+
+.filter-list li:hover {
+  background-color: #404040;
+  transform: translateX(2px);
+}
+
+/* Dropdown styles */
+.dropdown-toggle.btn-primary {
+  background-color: #2d2d2d !important;
+  border: 1px solid #404040 !important;
+  padding: 8px 15px;
+  min-width: 120px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #e1e1e1 !important;
+}
+
+.dropdown-toggle.btn-primary::after {
+  margin-left: 8px;
+  border-top-color: #e1e1e1;
+}
+
+.dropdown-toggle.btn-primary:hover {
+  background-color: #363636 !important;
+  border-color: #4f46e5 !important;
+}
+
+.dropdown-menu {
+  background-color: #2d2d2d !important;
+  border: 1px solid #404040 !important;
+  padding: 4px 0;
+  min-width: 120px;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+  color: #e1e1e1 !important;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: #4f46e5 !important;
+  color: white !important;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+/* Add subtle glow effects on hover */
+.counter button:hover,
+.filter-list input:focus,
+.dropdown-toggle.btn-primary:hover {
+  box-shadow: 0 0 15px rgba(79, 70, 229, 0.3);
+}
+
+/* Style for placeholder text */
+::placeholder {
+  color: #888;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
+}
+
+.filter-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filter-dropdown .dropdown-toggle {
+    background-color: #2d2d2d !important;
+    border: 1px solid #404040 !important;
+    min-width: 150px;
+    text-align: left;
+    font-weight: 500;
+    color: white !important;
+}
+
+.filter-dropdown .dropdown-toggle:hover,
+.filter-dropdown .dropdown-toggle:focus {
+    background-color: #363636 !important;
+    border-color: #4f46e5 !important;
+}
+
+.dropdown-menu {
+    background-color: #2d2d2d !important;
+    border: 1px solid #404040 !important;
+}
+
+.dropdown-item {
+    color: white !important;
+    font-weight: 500;
+}
+
+.dropdown-item:hover {
+    background-color: #4f46e5 !important;
+    color: white !important;
+}
+
+.filter-list input {
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #404040;
+    padding: 8px 15px;
+    border-radius: 4px;
+    width: 360px;
+}
+
+.filter-list input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.25);
+}
+
+/* Make placeholder text more visible */
+.filter-list input::placeholder {
+    color: #999;
+}
+
+.counter h1 {
+    font-size: 4rem;  /* Makes the number bigger */
+    font-weight: 700; /* Makes it bolder */
+    color: #60a5fa;   /* Keeps the same blue color as other h1s */
+    margin: 10px 0;   /* Adjusts spacing */
+    text-shadow: 0 0 10px rgba(96, 165, 250, 0.3); /* Optional: adds a subtle glow */
 }
