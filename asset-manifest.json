@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pkim0/cw08-react/static/css/main.b1ad61dc.css",
-    "main.js": "/pkim0/cw08-react/static/js/main.53b15bd4.js",
-    "static/js/453.ed3810f9.chunk.js": "/pkim0/cw08-react/static/js/453.ed3810f9.chunk.js",
-    "index.html": "/pkim0/cw08-react/index.html",
-    "main.b1ad61dc.css.map": "/pkim0/cw08-react/static/css/main.b1ad61dc.css.map",
-    "main.53b15bd4.js.map": "/pkim0/cw08-react/static/js/main.53b15bd4.js.map",
-    "453.ed3810f9.chunk.js.map": "/pkim0/cw08-react/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/cw08-react/static/css/main.b1ad61dc.css",
+    "main.js": "/cw08-react/static/js/main.bf6da468.js",
+    "static/js/453.ed3810f9.chunk.js": "/cw08-react/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/cw08-react/index.html",
+    "main.b1ad61dc.css.map": "/cw08-react/static/css/main.b1ad61dc.css.map",
+    "main.bf6da468.js.map": "/cw08-react/static/js/main.bf6da468.js.map",
+    "453.ed3810f9.chunk.js.map": "/cw08-react/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b1ad61dc.css",
-    "static/js/main.53b15bd4.js"
+    "static/js/main.bf6da468.js"
   ]
 }
